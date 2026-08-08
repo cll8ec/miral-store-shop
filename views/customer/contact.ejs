@@ -1,0 +1,59 @@
+<div class="py-16 bg-[#f4f4f5]">
+  <div class="container-rtl max-w-3xl">
+    
+    <div class="text-center mb-10">
+      <h1 class="text-3xl font-extrabold text-[#09090b] mb-2 tracking-tight">تواصل مع متجر ميرال</h1>
+      <p class="text-[#71717a] text-xs sm:text-sm">يسعدنا استقبال استفساراتكم واقتراحاتكم في أي وقت</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 items-start">
+      
+      <div class="card-awesomic p-6 space-y-6">
+        <div>
+          <h3 class="font-bold text-[#09090b] text-xs sm:text-sm mb-1">📍 المقر الرئيسي</h3>
+          <p class="text-xs text-[#52525b]">طريق الملك عبدالعزيز، الرياض، المملكة العربية السعودية</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-[#09090b] text-xs sm:text-sm mb-1">📞 خدمة العملاء (واتساب)</h3>
+          <p class="text-xs text-[#52525b] dir-ltr text-right">+966 50 000 0000</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-[#09090b] text-xs sm:text-sm mb-1">✉️ البريد الإلكتروني</h3>
+          <p class="text-xs text-[#52525b]">support@miral.sa</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-[#09090b] text-xs sm:text-sm mb-1">⏰ أوقات العمل</h3>
+          <p class="text-xs text-[#52525b]">من السبت إلى الخميس: 9:00 صباحاً - 10:00 مساءً</p>
+        </div>
+      </div>
+
+      <div class="card-awesomic p-6">
+        <form @submit.prevent="triggerToast('تم إرسال رسالتك بنجاح! سنرد عليك قريباً.')" class="space-y-4">
+          <div>
+            <label class="block text-xs font-medium text-[#18181b] mb-1">الاسم الكامل *</label>
+            <input type="text" required class="input-awesomic text-xs py-2.5">
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-[#18181b] mb-1">رقم الجوال أو الإيميل *</label>
+            <input type="text" required class="input-awesomic text-xs py-2.5">
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-[#18181b] mb-1">الرسالة *</label>
+            <textarea rows="4" required class="input-awesomic text-xs py-2.5"></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary w-full py-3 text-xs font-medium">
+            إرسال الرسالة
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+  </div>
+</div>
